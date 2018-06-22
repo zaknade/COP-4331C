@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.santiagorook.selectaroute">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Select A Route"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD_hrIp4DN8t3OfTrW_4ttDaF_ZKF99b7Y"/>
+
+        <activity android:name=".views.AdminHomeActivity"></activity>
+        <activity android:name=".views.DeleteARoute"></activity>
+
+        <activity android:name=".views.HomeLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".views.MapsActivity"></activity>
+
+        <activity
+            android:name=".views.RegisterAUser"
+            android:label="RegisterAUser"
+            android:parentActivityName=".views.HomeLogin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.santiagorook.selectaroute.views.HomeLogin"/>
+        </activity>
+
+        <activity android:name=".views.SelectARoute"></activity>
+        <activity android:name=".views.SelectAStop"></activity>
+        <activity android:name=".views.ShowStopAndBusInfo"></activity>
+        <activity android:name=".views.StopMap"></activity>
+        <activity android:name=".views.UserHomeActivity"></activity>
+        <activity android:name=".views.ViewRouteSchedule"></activity>
+    </application>
+
+</manifest>

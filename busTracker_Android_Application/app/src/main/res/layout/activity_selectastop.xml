@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.santiagorook.selectaroute.views.SelectAStop">
+
+    <Button
+        android:id="@+id/scheduleAButton"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_x="50dp"
+        android:layout_y="4dp"
+        android:text="Schedule A" />
+
+    <Button
+        android:id="@+id/scheduleBButton"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_x="218dp"
+        android:layout_y="4dp"
+        android:text="Schedule B" />
+
+    <ListView
+        android:id="@+id/stopListActivity"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_x="0dp"
+        android:layout_y="62dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+</AbsoluteLayout>
